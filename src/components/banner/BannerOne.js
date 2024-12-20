@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Link as ScrollTo } from 'react-scroll';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Link as ScrollTo } from "react-scroll";
 
 const BannerOne = () => {
   return (
@@ -13,15 +13,17 @@ const BannerOne = () => {
                 <div className="content">
                   <span className="pre-title">TBTA va DT</span>
                   <h1 className="title">
-                    Ma'lumot almashish, aloqa xavfsizligi, ma'lumotlar himoyasi va texnologiyalarga
-                    bag'ishlangan.
+                    Ma'lumot almashish, aloqa xavfsizligi, ma'lumotlar himoyasi
+                    va texnologiyalarga bag'ishlangan.
                   </h1>
                   <p className="description">
-                    Telekommunikatsiya - aloqalarni kuchaytiruvchi va ma'lumotlarni almashuvchi.
+                    Axborot texnologiyalarining dasturiy ta’minoti
                     <p></p>
                   </p>
                   <div className="read-more-btn">
-                    <Link className="edu-btn" to="/lessons">
+                    <Link
+                      className="edu-btn"
+                      to="/lessons">
                       Bloglar <i className="icon-arrow-right-line-right"></i>
                     </Link>
                   </div>
@@ -50,11 +52,12 @@ const BannerOne = () => {
                       <h6 className="title">TBTA va DT </h6>
                       <div className="card-bottom">
                         <p>
-                          Telekommunikatsiya, ma'lumotlarni uzoq masofaga uzatish va almashish uchun
-                          ishlatiladi, qisqa degan qilib telefonlar, radio, televidenie va internet
-                          kabi texnologiyalar bilan. Bu sohada davlatlar, korxonalar va insonlar
-                          o'rtasida ma'lumot almashish, ko'rsatish va olqishning katta ahamiyatini
-                          anglatadi.
+                          Axborot texnologiyalari, ma'lumotlarni uzoq masofaga
+                          uzatish va almashish uchun ishlatiladi, qisqa degan
+                          qilib telefonlar, radio, televidenie va internet kabi
+                          texnologiyalar bilan. Bu sohada davlatlar, korxonalar
+                          va insonlar o'rtasida ma'lumot almashish, ko'rsatish
+                          va olqishning katta ahamiyatini anglatadi.
                         </p>
                       </div>
                     </div>
@@ -79,32 +82,58 @@ const BannerOne = () => {
 
         <div className="shape-dot-wrapper shape-wrapper d-xl-block d-none">
           <div className="shape shape-1">
-            <img src="/images/shapes/shape-01.png" alt="Shape Thumb" />
+            <img
+              src="/images/shapes/shape-01.png"
+              alt="Shape Thumb"
+            />
           </div>
           <div className="shape shape-2">
-            <img src="/images/shapes/shape-02.png" alt="Shape Thumb" />
+            <img
+              src="/images/shapes/shape-02.png"
+              alt="Shape Thumb"
+            />
           </div>
           <div className="shape shape-3">
-            <img src="/images/shapes/shape-03.png" alt="Shape Thumb" />
+            <img
+              src="/images/shapes/shape-03.png"
+              alt="Shape Thumb"
+            />
           </div>
           <div className="shape shape-4">
-            <img src="/images/shapes/shape-04.png" alt="Shape Thumb" />
+            <img
+              src="/images/shapes/shape-04.png"
+              alt="Shape Thumb"
+            />
           </div>
           <div className="shape shape-5">
-            <img src="/images/shapes/shape-05.png" alt="Shape Thumb" />
+            <img
+              src="/images/shapes/shape-05.png"
+              alt="Shape Thumb"
+            />
           </div>
           <div className="shape shape-6">
-            <img src="/images/shapes/shape-05-05.png" alt="Shape Thumb" />
+            <img
+              src="/images/shapes/shape-05-05.png"
+              alt="Shape Thumb"
+            />
           </div>
         </div>
 
         <div className="shape-round">
-          <img src="/images/banner/banner-01/shape-27.png" alt="Shape Images" />
+          <img
+            src="/images/banner/banner-01/shape-27.png"
+            alt="Shape Images"
+          />
         </div>
       </div>
 
       <div className="scroll-down-btn">
-        <ScrollTo className="round-btn" to="about-us" spy={true} smooth={true} duration={200}>
+        <ScrollTo
+          className="round-btn"
+          to="about-us"
+          spy={true}
+          smooth={true}
+          duration={200}>
           <i className="icon-arrow-down-s-line"></i>
         </ScrollTo>
       </div>
