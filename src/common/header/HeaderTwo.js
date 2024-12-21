@@ -1,40 +1,49 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Nav from './Nav';
-import HeaderSticky from './HeaderSticky';
-import ResponsiveMenu from './ResponsiveMenu';
-import { useFirebase } from '../../providers/firebase/FirebaseProvider';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import Nav from "./Nav";
+import HeaderSticky from "./HeaderSticky";
+import ResponsiveMenu from "./ResponsiveMenu";
+import { useFirebase } from "../../providers/firebase/FirebaseProvider";
 
 const HeaderTwo = ({ styles, disableSticky, searchDisable, buttonStyle }) => {
   const { isAuthenticated } = useFirebase();
   const [offcanvasShow, setOffcanvasShow] = useState(false);
   const [searchPopup, setSearchPopup] = useState(false);
   const onCanvasHandler = () => {
-    setOffcanvasShow(prevState => !prevState);
+    setOffcanvasShow((prevState) => !prevState);
   };
 
   const onSearchHandler = () => {
-    setSearchPopup(prevState => !prevState);
+    setSearchPopup((prevState) => !prevState);
   };
 
   if (searchPopup) {
-    document.body.classList.add('search-popup-active');
+    document.body.classList.add("search-popup-active");
   } else {
-    document.body.classList.remove('search-popup-active');
+    document.body.classList.remove("search-popup-active");
   }
 
   const sticky = HeaderSticky(200);
-  const classes = `header-default ${sticky ? 'sticky' : ''}`;
-  const stickyStatus = disableSticky ? '' : ' header-sticky';
+  const classes = `header-default ${sticky ? "sticky" : ""}`;
+  const stickyStatus = disableSticky ? "" : " header-sticky";
 
   return (
     <>
-      <header className={`edu-header ${stickyStatus} ${styles || ''} ${classes || ''}`}>
+      <header
+        className={`edu-header ${stickyStatus} ${styles || ""} ${
+          classes || ""
+        }`}>
         <div className="row align-items-center">
           <div className="col-lg-4 col-xl-3 col-md-6 col-6">
             <div className="logo">
-              <Link to={process.env.PUBLIC_URL + '/'}>
-                <img className="logo-light" src="/images/logo/logo.png" alt="Main Logo" />
+              <Link to={process.env.PUBLIC_URL + "/"}>
+                <div
+                  style={{
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                  }}>
+                  ATDT
+                </div>
               </Link>
             </div>
           </div>
@@ -52,8 +61,7 @@ const HeaderTwo = ({ styles, disableSticky, searchDisable, buttonStyle }) => {
                   <div className="quote-icon quote-search">
                     <button
                       className="white-box-icon search-trigger header-search"
-                      onClick={onSearchHandler}
-                    >
+                      onClick={onSearchHandler}>
                       <i className="ri-search-line"></i>
                     </button>
                   </div>
@@ -61,26 +69,27 @@ const HeaderTwo = ({ styles, disableSticky, searchDisable, buttonStyle }) => {
                 <div className="quote-icon quote-user d-none d-md-block ml--15 ml_sm--5">
                   {isAuthenticated ? (
                     <Link
-                      className={`edu-btn btn-medium left-icon header-button ${buttonStyle || ''}`}
-                      to={process.env.PUBLIC_URL + '/profile'}
-                    >
+                      className={`edu-btn btn-medium left-icon header-button ${
+                        buttonStyle || ""
+                      }`}
+                      to={process.env.PUBLIC_URL + "/profile"}>
                       <i className="ri-user-line"></i>Hisob
                     </Link>
                   ) : (
                     <Link
-                      className={`edu-btn btn-medium left-icon header-button ${buttonStyle || ''}`}
-                      to={process.env.PUBLIC_URL + '/login-register'}
-                    >
+                      className={`edu-btn btn-medium left-icon header-button ${
+                        buttonStyle || ""
+                      }`}
+                      to={process.env.PUBLIC_URL + "/login-register"}>
                       <i className="ri-user-line"></i>Kirish
                     </Link>
                   )}
                 </div>
                 <div className="quote-icon quote-user d-block d-md-none ml--15 ml_sm--5">
                   <Link
-                    to={process.env.PUBLIC_URL + '/login-register'}
+                    to={process.env.PUBLIC_URL + "/login-register"}
                     className="white-box-icon"
-                    href="#"
-                  >
+                    href="#">
                     <i className="ri-user-line"></i>
                   </Link>
                 </div>
@@ -89,8 +98,7 @@ const HeaderTwo = ({ styles, disableSticky, searchDisable, buttonStyle }) => {
                 <div className="hamberger">
                   <button
                     className="white-box-icon hamberger-button header-menu"
-                    onClick={onCanvasHandler}
-                  >
+                    onClick={onCanvasHandler}>
                     <i className="ri-menu-line"></i>
                   </button>
                 </div>
