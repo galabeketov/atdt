@@ -23,30 +23,11 @@ const PrivacyPolicy = () => {
                   <h4>DASTUR INJINIRINGI</h4>
                   <img
                     className="radius-small w-100"
-                    src="https://static.tuit.uz/uploads/1/720__ut6-jJcdFMygwwgPFo1g9pbiZ0O-5dQF.jpg"
+                    src="/images/aboutATDT.jpg"
                     alt="Biz haqimizda"
                   />
                 </div>
 
-                <h4 className="title">Kafedra mudiri: </h4>
-
-                <div>
-                  <img
-                    src="https://static.tuit.uz/uploads/1/anrjHWhDZkDhXKXPveE_eB0JKM6C7ZEV.png"
-                    alt=""
-                    width={"25%"}
-                  />
-                  <ul>
-                    <li>
-                      PhD, dotsent v.b. Abdujapparova Mubarak Baltabayevna
-                    </li>
-                    <li>
-                      Qabul vaqti: Seshanba, Payshanba 15:00 dan 16:00 gacha
-                    </li>
-                    <li>Telefon: (+99871) 238-65-56</li>
-                    <li>E-mail: abdujapparova@tuit.uz</li>
-                  </ul>
-                </div>
                 <p>
                   TATU rektorining 2013 yil 29 avgustdagi 905-sonli buyrug‘iga
                   asosan sobiq Axborot texnologiyalarining dasturiy ta’minoti”
@@ -357,13 +338,6 @@ const PrivacyPolicy = () => {
                     Muradovalar magistratura bosqichidagi talabalar bilan
                     muntazam ravishda shug‘ullanib kelmoqdalar.
                   </p>
-                </div>
-                <div>
-                  <img
-                    width={"100%"}
-                    src="https://static.tuit.uz/uploads/1/720__0ZkY0PaFnedwObAOOLfcMpWAK48WMeVw.jpg"
-                    alt=""
-                  />
                 </div>
 
                 <ul>
