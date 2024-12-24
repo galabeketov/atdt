@@ -11,7 +11,7 @@ const BannerOne = () => {
             <div className="banner-left-content">
               <div className="inner">
                 <div className="content">
-                  <span className="pre-title">TBTA va DT</span>
+                  <span className="pre-title">ATDT</span>
                   <h1 className="title">
                     Ma'lumot almashish, aloqa xavfsizligi, ma'lumotlar himoyasi
                     va texnologiyalarga bag'ishlangan.
@@ -49,7 +49,7 @@ const BannerOne = () => {
                       </div>
                     </div>
                     <div className="content">
-                      <h6 className="title">TBTA va DT </h6>
+                      <h6 className="title">ATDT </h6>
                       <div className="card-bottom">
                         <p>
                           Axborot texnologiyalari, ma'lumotlarni uzoq masofaga

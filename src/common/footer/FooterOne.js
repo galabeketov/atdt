@@ -143,7 +143,7 @@ const FooterOne = () => {
                 <div className="inner text-center">
                   <p>
                     {new Date().getFullYear()} |{" "}
-                    <a href="#"> TBTA va DT | made with ❤️ by Muhammad</a>
+                    <a href="#"> ATDT | made with ❤️ by Galimjan</a>
                   </p>
                 </div>
               </div>
