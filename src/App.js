@@ -15,6 +15,7 @@ import Quiz from "./pages/detailspages/Quiz";
 import CourseList from "./pages/course/CourseList";
 import QuizList from "./pages/course/QuizList";
 import ChatWidget from "./components/widget";
+import Publications from "./pages/course/Publications";
 
 function App() {
   return (
@@ -35,6 +36,11 @@ function App() {
             exact
             path={`${process.env.PUBLIC_URL + "/lessons"}`}
             element={<CourseOne />}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL + "/publications"}`}
+            element={<Publications />}
           />
           <Route
             exact
