@@ -116,10 +116,10 @@ const Publications = () => {
                     <th>ProektShifri</th>
                     <th>SDB</th>
                     <th>Shahri</th>
-                    <th>UquvYili</th>
+                    <th>O'quv yili</th>
                     <th>Yili</th>
-                    <th>createdAt</th>
-                    <th>kiritVaqt</th>
+                    {/* <th>createdAt</th>
+                    <th>kiritVaqt</th> */}
                   </tr>
                 </thead>
                 <tbody>
@@ -161,8 +161,8 @@ const Publications = () => {
                         <td>{ProektShifri || ""}</td>
                         <td>{SDB || ""}</td>
                         <td>{Shahri || ""}</td>
-                        <td>{UquvYili || ""}</td>
-                        <td>{Yili || ""}</td>
+                        {/* <td>{UquvYili || ""}</td>
+                        <td>{Yili || ""}</td> */}
                         <td>
                           {/* createdAt could be a Firestore Timestamp; handle accordingly */}
                           {createdAt
