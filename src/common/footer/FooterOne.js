@@ -13,14 +13,13 @@ const FooterOne = () => {
                 <div className="edu-footer-widget">
                   <div className="logo">
                     <Link to={process.env.PUBLIC_URL + "/"}>
-                      <img
+                      <div
                         style={{
-                          maxWidth: 150,
-                        }}
-                        className="logo-light"
-                        src="/images/logo/logo-white.png"
-                        alt="Footer Logo"
-                      />
+                          fontSize: "18px",
+                          fontWeight: "bold",
+                        }}>
+                        ATDT
+                      </div>
                     </Link>
                   </div>
                   <p className="description">
