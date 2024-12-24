@@ -106,7 +106,7 @@ const Publications = () => {
                     <th>Betlari</th>
                     <th>Kodi</th>
                     <th>Kvartal</th>
-                    <th>MuallifTanlov</th>
+                    <th>Muallif</th>
                     <th>Mualliflar</th>
                     <th>MualliflarSoni</th>
                     <th>Nashr</th>
