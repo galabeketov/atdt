@@ -100,16 +100,16 @@ const FooterOne = () => {
                         </li>
                         <li>
                           <i className="icon-phone-fill"></i>
-                          <a href="+998903747483">+998 90 3747483</a>
+                          <a href="+998903747483">+998 91 7776842</a>
                         </li>
 
                         <li>
                           <i className="icon-mail-line-2"></i>
                           <a
                             target="_blank"
-                            href="mailto:muhammad_jon@tuit.uz"
+                            href="mailto:beketovgalimjan0@gmail.com"
                             rel="noreferrer">
-                            muhammad_jon@tuit.uz
+                            beketovgalimjan0@gmail.com
                           </a>
                         </li>
                       </ul>
